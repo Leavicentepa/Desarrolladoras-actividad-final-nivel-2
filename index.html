@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Laboratorio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div id="principal">
+      <h1>Create Account</h1>
+      <form>
+        <div class="campo">
+          <label>Nombre</label>
+          <div id="contenedor-nombre" class="input">
+            <input id="nombre" type="text" pattern="[a-zA-Z]+" required>
+            <span>
+              <img id="imagen-nombre" src="" alt="">
+            </span>
+          </div>
+          <p id="error-nombre" class="error"></p>
+        </div>
+        <div class="campo">
+          <label>Email</label>
+          <div id="contenedor-email" class="input">
+            <input 
+              id="email"
+              type="email" 
+              pattern="^[a-zA-Z0-9.!#$%&'*+\/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$" 
+              required
+            >
+            <span>
+              <img id="imagen-email" src="" alt="">
+            </span>
+          </div>
+          <p id="error-email" class="error"></p>
+        </div>
+        <div class="campo">
+          <label>Clave</label>
+          <div id="contenedor-password" class="input">
+            <input id="password" type="password" minlength="8" required>
+            <span>
+              <img id="imagen-password" src="" alt="">
+            </span>
+          </div>
+          <p id="error-password" class="error"></p>
+        </div>
+        <div class="campo">
+          <label>Confirme su clave</label>
+          <div id="contenedor-confirmacion" class="input">
+            <input id="password-confirmation" type="password" minlength="8" required>
+            <span>
+              <img id="imagen-confirmacion" src="" alt="">
+            </span>
+          </div>
+          <p id="error-confirmacion" class="error"></p>
+        </div>
+        <input onclick="enviar(event)" type="submit" value="ENVIAR">
+      </form>
+    </div>
+    <script src="index.js" type="text/javascript"></script>
+  </body>
+</html>

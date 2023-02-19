@@ -1,0 +1,95 @@
+/* 
+  COLORES
+
+  Fondo: #242933
+  Formulario: #2f3644
+  Texto y borde: #acbae1
+  Botón: #6c63ff
+  Borde botón: #2d2d2e
+  Borde blanco botón: #cccdce
+  Texto botón: #cfcdff
+  Rojo: #dc5a5a
+  Verde: #4cc962
+*/
+
+body {
+  background-color: #242933;
+  color: #acbae1;
+  font-family: 'Poppins', sans-serif;
+}
+
+#principal  {
+  background-color: #2f3644;
+  border-radius: 10px;
+  padding: 3rem;
+  margin-left: auto;
+  margin-right: auto;
+  width: 18rem;
+  display: flex;
+  flex-direction: column;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+.campo {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 0.2rem;
+}
+
+label {
+  font-size: 15px;
+  margin-bottom: 0.2rem;
+  color: #8c98b7;
+}
+
+input {
+  border: none;
+  width: 100%;
+}
+
+input:focus {
+  outline: none;
+}
+
+input[type="submit"] {
+  background-color: #6c63ff;
+  color: #cfcdff;
+  padding: 1rem;
+  border-radius: 5px;
+}
+
+input[type="submit"]:active {
+  outline: 2px solid #cccdce;
+}
+
+.input {
+  background: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 8px 8px 8px;
+  border-radius: 5px;
+}
+
+.correct:focus-within {
+  border: 1px solid #4cc962;
+}
+
+.input > span {
+  display: flex;
+  align-items: center;
+}
+
+img {
+  width: 15px;
+}
+
+.error {
+  color: #dc5a5a;
+  font-size: 12px;
+  margin-top: 0.2rem;
+}
